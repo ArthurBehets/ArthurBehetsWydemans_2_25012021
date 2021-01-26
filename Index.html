@@ -41,17 +41,33 @@
                 <div class="localisationDiv"><input type="text" name="lieu" placeholder="Marseille, France" class="localisationInput"></div>
                 <div class="shearchDiv"><input type ="submit" value="Rechercher" class="shearchInput"></div>
             </div>
-            <div>
-                <h3>Filtres</h3>
-                <div>
-                    <button ><div class ="iconCase"><i class="fas fa-money-bill-wave"></i></div>Economique</button>
-                    <button ><div class ="iconCase"><i class="fas fa-child"></i></div>Familial</button>
-                    <button ><div class ="iconCase"><i class="fas fa-heart"></i></div>Romantique</button>
-                    <button ><div class ="iconCase"><i class="fas fa-dog"></i></div>Animaux autorisés</button>
+            <div class="filters">
+                <div class="filtersTitle"><h3>Filtres</h3></div>
+                <div class="filtersButton">
+                    <a href="">
+                        <div class="filtersIcon"><i class=" icon fas fa-money-bill-wave"></i>    <b class="filtersTxt">Economique</b></div>
+                    </a>
                 </div>
+                <div class="filtersButton">
+                    <a href="">
+                        <div class="filtersIcon"><i class=" icon fas fa-child"></i>     <b class="filtersTxt">Familial</b></div>
+                    </a>
+                </div>
+                <div class="filtersButton">
+                    <a href="">
+                        <div class="filtersIcon"><i class=" icon fas fa-heart"></i>    <b class="filtersTxt">Romantique</b></div>
+                    </a>
+                </div>
+                <div class="filtersButton">
+                    <a href="">
+                        <div class="filtersIcon"><i class=" icon fas fa-dog"></i>    <b class="filtersTxt">Animaux autorisés</b></div>
+                    </a>
+                </div>
+                
+                
             </div>
 
-            <p><i class="fas fa-info"></i>   Plus de 500 logements sont disponibles dans cette ville</p>
+            <p><i class="infoIcon fas fa-info"></i>   Plus de 500 logements sont disponibles dans cette ville</p>
             
         <!--Accomodation-->
         <section>
@@ -118,27 +134,29 @@
   </section>
  </body>
  <footer>
-     <div>
-         <h3>A propos</h3>
-         <ul>
-             <li>Fonctionnement du site</li>
-             <li>Conditions générales de vente</li>
-             <li>Données et confidentialité</li>
-         </ul>
-     </div>
-     <div>
-        <h3>Nos hébergements</h3>
-        <ul>
-            <li>Charte qualité</li>
-            <li>Soumettre votre hôtel</li>
-        </ul>
-    </div>
-    <div>
-        <h3>Assistance</h3>
-        <ul>
-            <li>Centre d'aide</li>
-            <li>Nous contacter</li>
-        </ul>
+     <div class="footerDiv">
+        <div class="footerCol">
+            <h3>A propos</h3>
+            <ul>
+                <li>Fonctionnement du site</li>
+                <li>Conditions générales de vente</li>
+                <li>Données et confidentialité</li>
+            </ul>
+        </div>
+        <div class="footerCol">
+            <h3>Nos hébergements</h3>
+            <ul>
+                <li>Charte qualité</li>
+                <li>Soumettre votre hôtel</li>
+            </ul>
+        </div>
+        <div class="footerCol">
+            <h3>Assistance</h3>
+            <ul>
+                <li>Centre d'aide</li>
+                <li>Nous contacter</li>
+            </ul>
+        </div>
     </div>
  </footer>
 
