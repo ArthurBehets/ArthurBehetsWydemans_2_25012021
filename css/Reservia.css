@@ -1,5 +1,7 @@
 /*Général */
-
+html{
+    width :100%;
+}
 @font-face{
     font-family : "Raleway";
     src :url("../Police/Raleway-VariableFont_wght.ttf");
@@ -326,19 +328,89 @@ a{
 .mostPoepleLinkGroup:hover{
     box-shadow: 5px 5px 5px  rgba(0,0,0,0.15);
 }
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+/*Activites*/
+/*img*/
+.imgVieuxPort{
+    height : 390px;
+    width :300px;
+    border-radius: 20px 20px 0 0;
+}
+.imgFort{
+    height:180px;
+    width :300px;
+    border-radius: 20px 20px 0 0;
+}
+.imgIles{
+    height: 110px;
+    width :300px;
+    border-radius: 20px 20px 0 0;
+}
+.imgParcNational{
+    height : 390px;
+    width :300px;
+    border-radius: 20px 20px 0 0;
+}
+.imgNotreDame{
+    height: 155px;
+    width :300px;
+    border-radius: 20px 20px 0 0;
+}
+.imgParcLongchamp{
+    height: 135px;
+    width :300px;
+    border-radius: 20px 20px 0 0;
+}
 
+/*--------------*/
+.activities{
+    margin-bottom: 100px;
+    height :445px;
+}
+
+.activitiesLinks{
+    display :flex;
+    justify-content: space-between;
+    height: 445px;
+}
+.activitiesDuo{
+    display :flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 460px;
+}
+.activitiesLinkTxt{
+    width :280px;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+    color : black;
+    padding-left: 20px;
+    height :55px;
+}
+.activitiesTitle{
+    font-size: 18px;
+    }
+.activitiesLinkGroup{
+    width : 300px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px  rgba(0,0,0,0.05);
+}
+.activitiesLinkGroup:hover{
+    box-shadow: 5px 5px 5px  rgba(0,0,0,0.15);
+}
 /* ------------------------------------------------------------------------------------------------------------------------------------*/ 
 /*Footer */
 footer{
     background-color : #F2F2F2;
     height : 200px;
     margin-top : 40px;
-
+    width : 100%;
 }
 
 .footerDiv{
     display :flex;
     justify-content: space-around;
+    width :1440px;
 }
 
 .footerCol{
