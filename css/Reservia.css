@@ -8,10 +8,13 @@
 body{
     font-family: Raleway;
     width :1440px;
+    margin :auto;
+    padding-top : 40px;
 }
 
 h2{
     font-size : 20px;
+    font-weight: bold;
 }
 
 h3{
@@ -199,21 +202,23 @@ a{
     border :2px #F2F2F2 solid;
     border-radius : 40px;
 }
-
+.infoBar{
+    margin : 30px 0 30px 0;
+}
 /* --------------------------------------------------------------------------------------------------------------------------------*/ 
-/* Accommodation */
+/* Left Accommodation Part*/
 .accommodation{
     display :flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .accommodationLeft{
     display :flex;
     flex-direction: column;
     width : 800px;
-    height : 700px;
+    height : 625px;
     background-color: #F2F2F2;
     padding : 40px 40px 40px 40px;
-    border-radius: 40px;
+    border-radius: 20px;
 }
 .accommodationLinks{
     display: flex;
@@ -221,47 +226,106 @@ a{
     justify-content: space-between;
 }
 .accommodationImg{
+    
     width : 240px;
-    height : 200px;
+    height : 115px;
     z-index: 1;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     border : 5px white solid;
 }
 .accommodationGroup{
     border-radius: 20px;
+    margin-bottom: 40px;
+    height :210px;
+    box-shadow: 5px 5px 5px  rgba(0,0,0,0.05);
+    
 }
 .accommodationEtiquette{
     position : relative;
-    top : -90px;
+    top : -10px;
+    height :80px;
     z-index: 2;
     background-color :white;
     color : black;
+    font-size :18px;
     border-radius:0 0 20px 20px ;
     padding-left: 15px;
     padding-bottom:10px;
-    padding-top: 1px;    
-    line-height: 5px;
-
-   
+    padding-top: 0.5px;    
+    line-height: 12px;
+    }
+    
+.accommodationEtiquetteTxt{
+    margin-top :-8px;
 }
-
+.accommodationGroup:hover{
+    box-shadow: 5px 5px 5px  rgba(0,0,0,0.15);
+}
 .stars{
     color:#0065FC;
+
 }
 .empty{
     color: #F2F2F2;
 }
-
+.accommodationTitle{
+    padding-bottom: 20px;
+}
 .showMore{
     font-weight: bold;
 }
+/*---------------------------------------------------------------------------------------------------------------------------------------*/
+/* Right Accommodation part*/
 
 
-
-.mostPoeple{
+.accommodationRight{
     width :420px;
+    display :flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    padding : 40px 40px 40px 40px;
+    border-radius: 20px;
+}
+.mostPeopleTitle{
+    display : flex;
+    justify-content: space-between;
+}
+.graphIcon{
+    font-size:25px;
+    margin-top: 12px;
+}
+
+.mostPoepleLinkImg{
+    width : 200px;
+    height: 135px;
+    border : 5px white solid;
+    border-radius: 20px;
+}
+.mostPoepleLinkGroup{
+    display :flex;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px  rgba(0,0,0,0.05);
+    width:395px;
+    height: 145px;
+}
+.mostPoepleLinkEtiquette{
+    display :flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    width :195px;
+    height : 145px;
+    border-radius: 0 20px 20px 0;
+    padding-left :15px;
+    margin-left: -15px;
+    color : black;
+    font-size :18px;
 }
     
+.mostPoepleLinkGroup:hover{
+    box-shadow: 5px 5px 5px  rgba(0,0,0,0.15);
+}
 
 /* ------------------------------------------------------------------------------------------------------------------------------------*/ 
 /*Footer */
