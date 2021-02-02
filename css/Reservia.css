@@ -12,6 +12,7 @@ body{
 header{
     display :flex;
     margin-left :5%;
+    justify-content: space-between;
     
 }
 section{
@@ -35,20 +36,23 @@ ul{
     list-style: none;
     line-height: 30px;
 }
-
+a{
+    color :#0065FC;
+    text-decoration: none;
+}
 
 /*Page*/
 .divBody{
-    width :90%;
+    width :95%;
 }
 /*Menu */
 .menu{
-    position: relative;
-    left : 70%;
-    top :0px;
-    padding: 2%;
-    color :#0065FC;
-    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    width : 30%;
+}
+.menu a{
+    margin-left :10px;
 }
 .black{
     color :black;
@@ -98,8 +102,8 @@ ul{
 .filters{
     display: flex;
     width :65%;
+    flex-wrap: wrap;
     justify-content: space-between;
-    height : 40px;
     margin-top: 40px;
 }
 .filtersDiv{
@@ -108,6 +112,8 @@ ul{
     border-right : 2px #F2F2F2 solid ;
     border-radius: 20px;
     display :flex;
+    height: 40px;
+    margin-bottom: 20px;
 }
 .filtersIcon{
     background-color:#DEEBFF ;
@@ -155,6 +161,7 @@ ul{
     text-decoration: none;
     color: black;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.02);
+    width :25%;
 }
 .accommodationLink:hover{
     box-shadow: 5px 5px rgba(0, 0, 0, 0.07);
@@ -162,7 +169,7 @@ ul{
 
 .leftImg{
     object-fit: cover;
-    width : 240px;
+    width : 100%;
     height : 115px;
     border-radius: 20px 20px 0 0 ;
 }
@@ -198,7 +205,7 @@ ul{
 
 .rightImg{
     height :135px;
-    width :130px;
+    width :40%;
     object-fit: cover;
     border-radius: 20px 0 0  20px ;
     margin-right: 5px;
@@ -243,9 +250,13 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width :25%;
+}
+.soloActivity{
+    width :20%;
 }
 .activitiyImg{
-    width : 300px;
+    width : 100%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
@@ -269,6 +280,82 @@ footer{
     background-color: #F2F2F2;
     width :100%;
     margin :0;
+}
+
+
+/*Media*/
+@media (max-width:480px){
+    /*General*/
+    section{
+        margin :0;
+    }
+    /*Menu*/
+    .pcOnly{
+        display:none;
+    }
+    .menuResponsive{
+        display: flex;
+        width :100%;
+        text-align : center;
+    }
+    .menuResponsiveAccommodation{
+        width :50%;
+        border-bottom : 3px blue solid;
+    }
+    .menuResponsiveActivities{
+        width :50%;
+        border-bottom : 3px #F2F2F2 solid;
+    }
+    /*Shearch Bar*/
+    .shearchBar{
+        width : 100%;
+    }
+    /*Filters*/
+    .filtersTitle{
+        width :100%;
+        margin-bottom: 20px;
+    }
+    /*Accommodation*/
+    #accommodation{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    /*Right Accommodation part*/
+    .rightAccommodation{
+        width :100%;
+        margin-bottom: 20px;
+    }
+    /*Left Accomodation Part (on the bottom of the right part)*/
+    .accommodationLink{
+        width : 100%;
+    }
+    .leftImg{
+        width :100%;
+        height : 150px;
+    }
+    .leftAccommodation{
+        width :100%;
+    }
+    /*Activities*/
+    .soloActivity{
+        width :100%;
+    }
+    .duoActivities{
+        width: 100%;
+    }
+    .bigImg, .middleImg, .smallImg,.smallerImg{
+        height :200px;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
+
+@media (min-width:480px){
+    .smartphoneOnly{
+        display:none;
+    }
+    
 }
 /* Couleurs
  bleu  #0065FC

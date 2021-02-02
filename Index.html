@@ -21,10 +21,16 @@
             <!-- Menu -->
             <header>
                 <img src="img/logo/Reservia.svg" alt="Logo Reservia">
-                <a href="#accommodation" class="pcOnly menu blueBar">Hébergements</a>
-                <a href="#activities" class="pcOnly menu black">Activités</a>
-                <a href="" class="menu bold">S'inscrire</a>
+                <div class="menu">
+                    <a href="#accommodation" class="pcOnly blueBar">Hébergements</a>
+                    <a href="#activities" class="pcOnly black">Activités</a>
+                    <a href="" class="bold">S'inscrire</a>
+                </div>
             </header>
+            <div class="smartphoneOnly menuResponsive">
+                <a href="#accommodation" class="menuResponsiveAccommodation">Hébergements</a>
+                <a href="#activities" class="menuResponsiveActivities">Activités</a>
+            </div>
             <!-- Shearch Bar and filters -->
             <section>
                 <h1>Trouver votre hébergement pour des vacances de rêve</h1>
@@ -37,7 +43,7 @@
                 </div>
             <!--Filters   -->
                 <div class="filters">
-                    <h2>Filtres</h2>
+                    <h2 class="filtersTitle">Filtres</h2>
                     <div class="filtersDiv">
                         <i class="fas fa-money-bill-wave filtersIcon"></i>
                         <b class="filtersText">Economique</b>
@@ -57,7 +63,7 @@
                 </div>
                 <p><i class="fas fa-info-circle"></i> Plus de 500 logements sont disponibles dans cette ville</p>
             </section>
-            <!-- Accomodation -->
+            <!-- Accommodation -->
             <section id="accommodation">
                 <!-- Left Part -->
                 <div class="leftAccommodation">
@@ -202,7 +208,7 @@
             <!-- Activities -->
             <section id="activities">
                 <h3 class="entireRow">Activités à Marseille</h3>
-                <div class="activity">
+                <div class="activity soloActivity">
                     <img src="img/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" class="bigImg activitiyImg" alt="Image de l'activité">
                     <h4>Vieux Port</h4>
                 </div>
@@ -216,7 +222,7 @@
                         <h4>Iles de Frioul</h4>
                     </div>
                 </div>
-                <div class="activity">
+                <div class="activity  soloActivity">
                     <img src="img/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" class="bigImg activitiyImg" alt="Image de l'activité">
                     <h4>Parc National des Calanques</h4>
                 </div>
