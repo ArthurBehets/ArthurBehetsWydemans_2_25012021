@@ -63,7 +63,19 @@ a{
 .blueBar{
     border-top :2px #0065FC solid;
 }
-
+.menuResponsive{
+    display: flex;
+    width :100%;
+    text-align : center;
+}
+.menuResponsiveAccommodation{
+    width :50%;
+    border-bottom : 3px blue solid;
+}
+.menuResponsiveActivities{
+    width :50%;
+    border-bottom : 3px #F2F2F2 solid;
+}
 .shearchBar{
     display :flex;
     background-color:  #F2F2F2;
@@ -101,9 +113,8 @@ a{
 /*Filters  */
 .filters{
     display: flex;
-    width :65%;
+    width :80%;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-top: 40px;
 }
 .filtersDiv{
@@ -114,6 +125,7 @@ a{
     display :flex;
     height: 40px;
     margin-bottom: 20px;
+    margin-left :2%;
 }
 .filtersIcon{
     background-color:#DEEBFF ;
@@ -284,27 +296,20 @@ footer{
 
 
 /*Media*/
-@media (max-width:480px){
+
+
+@media (max-width:768px){
     /*General*/
     section{
         margin :0;
     }
     /*Menu*/
+    .menu{
+        flex-direction: column;
+        align-items: flex-end;
+    }
     .pcOnly{
         display:none;
-    }
-    .menuResponsive{
-        display: flex;
-        width :100%;
-        text-align : center;
-    }
-    .menuResponsiveAccommodation{
-        width :50%;
-        border-bottom : 3px blue solid;
-    }
-    .menuResponsiveActivities{
-        width :50%;
-        border-bottom : 3px #F2F2F2 solid;
     }
     /*Shearch Bar*/
     .shearchBar{
@@ -337,6 +342,9 @@ footer{
         width :100%;
     }
     /*Activities*/
+    .activity{
+        margin-bottom: 10px;
+    }
     .soloActivity{
         width :100%;
     }
@@ -351,11 +359,75 @@ footer{
     }
 }
 
-@media (min-width:480px){
+
+
+/*Tablette*/
+@media (min-width :768px) and (max-width :1024px){
+    section{
+        margin :0;
+    }
+    /*Menu*/
+    .menu{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .pcOnly{
+        display:none;
+    }
+    /*Shearch Bar*/
+    .shearchBar{
+        width : 100%;
+    }
+    /*Filters*/
+    .filtersTitle{
+        width :100%;
+        margin-bottom: 20px;
+    }
+    /*Accommodation*/
+    #accommodation{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    /*Right Accommodation part*/
+    .rightAccommodation{
+        width :100%;
+        margin-bottom: 20px;
+    }
+    /*Left Accomodation Part (on the bottom of the right part)*/
+    .accommodationLink{
+        width : 45%;
+    }
+    .leftImg{
+        width :100%;
+        height : 150px;
+    }
+    .leftAccommodation{
+        width :100%;
+    }
+    /*Activities*/
+    .soloActivity{
+        width :100%;
+    }
+    .duoActivities{
+        width: 100%;
+        flex-direction: row;
+    }
+    .activity{
+        margin-right : 10px;
+    }
+    .bigImg, .middleImg, .smallImg,.smallerImg{
+        height :100px;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
+
+
+@media (min-width : 1024px){
     .smartphoneOnly{
         display:none;
     }
-    
 }
 /* Couleurs
  bleu  #0065FC
