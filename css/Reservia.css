@@ -95,6 +95,9 @@ a{
     border-bottom :2px solid  #F2F2F2;
     border-top :2px solid  #F2F2F2;
     padding :0;
+    text-align :center;
+    font-weight: bolder;
+    font-size: large;
 }
 .localisationInput:focus{
     outline: 0;
@@ -327,7 +330,7 @@ footer{
     }
     /*Right Accommodation part*/
     .rightAccommodation{
-        width :100%;
+        width :98%;
         margin-bottom: 20px;
     }
     /*Left Accomodation Part (on the bottom of the right part)*/
@@ -339,7 +342,7 @@ footer{
         height : 150px;
     }
     .leftAccommodation{
-        width :100%;
+        width :98%;
     }
     /*Activities*/
     .activity{
@@ -361,7 +364,7 @@ footer{
 
 
 
-/*Tablette*/
+/*Tablet*/
 @media (min-width :768px) and (max-width :1024px){
     section{
         margin :0;
@@ -407,10 +410,12 @@ footer{
     /*Activities*/
     .soloActivity{
         width :100%;
+        margin-bottom: 20px;
     }
     .duoActivities{
         width: 100%;
         flex-direction: row;
+        margin-bottom: 20px;
     }
     .activity{
         margin-right : 10px;
