@@ -8,6 +8,7 @@ body{
     display :flex;
     flex-direction: column;
     font-family: raleway;
+    margin : 0;
 }
 header{
     display :flex;
@@ -40,28 +41,38 @@ a{
     color :#0065FC;
     text-decoration: none;
 }
-
+.no_margin{
+    margin :0;
+}
 /*Page*/
 .divBody{
-    width :95%;
+    width :90%;
+    display: flex;
+    flex-direction: column;
+    margin :auto;
 }
 /*Menu */
-.menu{
+nav{
     display: flex;
-    justify-content: space-between;
     width : 30%;
+    justify-content: space-around;
 }
-.menu a{
-    margin-left :10px;
+.logoReservia{
+    padding-top: 15px;
+}
+nav a{
+    padding-top: 20px;
+    justify-content: right;
 }
 .black{
     color :black;
+    font-size: medium;
 }
 .bold{
     font-weight: bold;
 }
 .blueBar{
-    border-top :2px #0065FC solid;
+    border-top :2px #0065FC outset;
 }
 .menuResponsive{
     display: flex;
@@ -134,9 +145,10 @@ a{
     background-color:#DEEBFF ;
     border-radius: 20px;
     width : 40px;
-    height : 70%;
+    height : 30px;
+    padding-top: 12px;
     text-align: center;
-    padding-top : 12px;
+    color:#0065FC;
 }
 .filtersText{
     border-radius: 0 20px 20px 0;
@@ -145,9 +157,19 @@ a{
 }
 .filtersDiv:hover{
     background-color: #DEEBFF;
-    border :none;
 }
-
+.filtersTitle{
+    padding-bottom: 15px;
+}
+.fa-info{
+    border :1px solid #F2F2F2;
+    font-size: small;
+    color:#0065FC;
+    padding :5px;
+    padding-left :8px;
+    padding-right :8px;
+    border-radius: 20px;
+}
 /* Accomodation */
 
 #accommodation{
@@ -168,15 +190,19 @@ a{
     padding-left :2%;
     padding-right: 2%;
 }
+.leftAccommodationTitle{
+    margin-bottom :0;
+    margin-left: 20px;
+}
 .accommodationLink{
     background-color:white ;
     border: 4px solid white;
     border-radius: 20px;
-    margin-bottom: 20px;
     text-decoration: none;
     color: black;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.02);
     width :25%;
+    height :240px;
 }
 .accommodationLink:hover{
     box-shadow: 5px 5px rgba(0, 0, 0, 0.07);
@@ -233,7 +259,7 @@ a{
     border :4px solid white;
     border-radius: 20px;
     background-color: white;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 .rightAccommodationLink:hover{
     box-shadow: 5px 5px rgba(0, 0, 0, 0.07);
@@ -241,6 +267,7 @@ a{
 .rightAccommodationTitle{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 
