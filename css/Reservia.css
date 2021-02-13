@@ -363,6 +363,8 @@ footer{
     /*Left Accomodation Part (on the bottom of the right part)*/
     .accommodationLink{
         width : 100%;
+        height: 300px;
+        margin-top: 20px;
     }
     .leftImg{
         width :100%;
@@ -386,6 +388,9 @@ footer{
     }
     footer{
         flex-direction: column;
+    }
+    .rightImg{
+        margin-right: 15%;
     }
 }
 
@@ -422,10 +427,14 @@ footer{
     .rightAccommodation{
         width :100%;
         margin-bottom: 20px;
+
     }
+    
     /*Left Accomodation Part (on the bottom of the right part)*/
     .accommodationLink{
         width : 45%;
+        height: 300px;
+        margin-top: 20px;
     }
     .leftImg{
         width :100%;
