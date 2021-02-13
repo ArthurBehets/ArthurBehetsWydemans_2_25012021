@@ -245,11 +245,12 @@ nav a{
 }
 
 .rightImg{
-    height :135px;
+    height :150px;
     width :40%;
     object-fit: cover;
     border-radius: 20px 0 0  20px ;
     margin-right: 5px;
+    
 }
 .rightAccommodationLink{
     display:flex;
