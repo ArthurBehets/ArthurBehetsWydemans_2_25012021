@@ -202,7 +202,7 @@ nav a{
     color: black;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.02);
     width :25%;
-    height :240px;
+    height :280px;
 }
 .accommodationLink:hover{
     box-shadow: 5px 5px rgba(0, 0, 0, 0.07);
@@ -428,6 +428,9 @@ footer{
         width :100%;
         margin-bottom: 20px;
 
+    }
+    .rightImg{
+        margin-right: 15%;
     }
     
     /*Left Accomodation Part (on the bottom of the right part)*/
